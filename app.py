@@ -1,9 +1,9 @@
 from flask import Flask, flash, redirect, render_template, request, session, abort
-app = Flask(__name__)
+application  = app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "Hola Mundo!!!"
+    return "Index!"
 
 @app.route("/members")
 def members():
